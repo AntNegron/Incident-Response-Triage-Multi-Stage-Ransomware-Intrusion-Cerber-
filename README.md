@@ -1,17 +1,16 @@
-[README_Ransomware_Triage_Cerber.md](https://github.com/user-attachments/files/30203366/README_Ransomware_Triage_Cerber.md)
 # Incident Response Triage: Multi-Stage Ransomware Intrusion (Cerber)
 
 ![Status](https://img.shields.io/badge/Status-Completed-success) ![Tools](https://img.shields.io/badge/Tools-Splunk%20%7C%20Sysmon-blue) ![MITRE](https://img.shields.io/badge/Framework-MITRE%20ATT%26CK-red)
 
-## 📌 Executive Summary
+## Executive Summary
 
 This project reconstructs a full ransomware intrusion timeline, from the attacker's first external reconnaissance to the final encryption of victim files. Using Splunk to correlate Sysmon and file-share telemetry, I traced how a single unnoticed entry point escalated into a 401-file encryption event over nearly two weeks of undetected attacker dwell time.
 
-👉 **[Read the Full Technical Breakdown Here]()** *(add your write-up link if you have one)*
+**[Read the Full Technical Breakdown Here](https://docs.google.com/document/d/1BU7pvF_BQm1dgZBgi2BdTLORjAbVTptGicF9aB-qu7A/edit?usp=sharing)**
 
 ---
 
-## 🛠 Technical Environment
+## Technical Environment
 
 - **SIEM:** Splunk
 - **Telemetry Sources:** Sysmon, Windows file-share logs
@@ -20,7 +19,7 @@ This project reconstructs a full ransomware intrusion timeline, from the attacke
 
 ---
 
-## 🚀 Key Findings
+## Key Findings
 
 - Reconstructed a **13-day, 19-hour** attacker dwell time — from initial brute-force compromise to ransomware execution.
 - Identified the delivery mechanism as a **steganographic payload** hiding a malicious VBScript dropper, which evaded basic detection.
@@ -28,7 +27,7 @@ This project reconstructs a full ransomware intrusion timeline, from the attacke
 
 ---
 
-## 🧠 Attack Chain (MITRE ATT&CK)
+## Attack Chain (MITRE ATT&CK)
 
 I mapped the full intrusion, from first contact to impact, across 6 confirmed techniques:
 
@@ -41,7 +40,7 @@ I mapped the full intrusion, from first contact to impact, across 6 confirmed te
 
 ---
 
-## 📈 Final Results
+## Final Results
 
 By the end of this investigation, I achieved:
 
